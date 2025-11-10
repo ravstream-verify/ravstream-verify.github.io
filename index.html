@@ -46,7 +46,7 @@
         }
     </style>
 </head>
-<body class="gradient-bg min-h-screen text-white overflow-x-hidden">
+<body class="gradient-bg min-h-screen text-white overflow-hidden">
     <div class="fixed inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-float"></div>
         <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float" style="animation-delay: -2s;"></div>
@@ -65,7 +65,7 @@
         </div>
 
         <div class="flex items-center justify-center animate-slide-up px-4" style="animation-delay: 0.4s;">
-            <button class="group relative px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 focus:outline-none focus:ring-4 focus:ring-blue-500/50 focus:ring-offset-2 focus:ring-offset-gray-900 glass-effect min-w-[200px] sm:min-w-[220px] touch-manipulation">
+            <button onclick="handleVerifyClick()" class="group relative px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 focus:outline-none focus:ring-4 focus:ring-blue-500/50 focus:ring-offset-2 focus:ring-offset-gray-900 glass-effect min-w-[200px] sm:min-w-[220px] touch-manipulation">
                 <span class="relative z-10">Verify Now</span>
                 <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </button>
@@ -91,6 +91,12 @@
     </div>
 
     <script>
+        // Placeholder function for button click - edit function name and content as needed
+        function handleVerifyClick() {
+            console.log('Verify button clicked');
+            // Add your verification logic here
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             const observerOptions = {
                 threshold: 0.1,
